@@ -1,52 +1,51 @@
-/* Global Style Start */
-/* Default Dark Theme */
+
 :root {
-    /* Font */
+    
     --primary_font-family: 'Satoshi', sans-serif;
-    /* Color */
+    
     --primary_color: #EFF1F5;
     --secondary_color: #5E6AD2;
     --accent_color: #2D374C;
     --color_one: #131722;
     --color_two: #EAFBF2;
     --default_color: #FFFFFF;
-    /* Text Color */
+    
     --text_color: #C0C6D6;
-    /* BG */
+    
     --primary_bg: #0D111A;
-    /* Transitions */
+    
     --theme-transition: all 0.5s ease;
 }
 
-/* Light Theme */
+
 [data-theme="light"] {
-    /* Color */
+    
     --primary_color: #0D111A;
     --secondary_color: #5E6AD2;
     --accent_color: #D0D4DB;
     --color_one: #EFF1F5;
     --color_two: #131722;
     --default_color: #0D111A;
-    /* Text Color */
+    
     --text_color: #4A5568;
-    /* BG */
+    
     --primary_bg: #FFFFFF;
 }
 
-/* Apply transitions to elements that change with theme */
+
 body, section, h1, h2, h3, h4, h5, h6, p, a, .d2c_card, .d2c_navbar, .d2c_footer_wrapper,
 .d2c_hero_wrapper, .d2c_about_wrapper, .d2c_services_wrapper, .d2c_project_wrapper, .d2c_contact_wrapper {
     transition: var(--theme-transition);
 }
 
-/* selection */
+
 ::selection {
     color: var(--primary_color);
     background: var(--secondary_color);
 }
-/* selection */
 
-/* Theme Toggle Button Styles */
+
+
 #theme-toggle {
     background-color: var(--accent_color);
     border: 2px solid var(--secondary_color);
@@ -142,7 +141,7 @@ p {
     inset: 0;
 }
 
-/* btn */
+
 .btn {
     color: var(--primary_bg);
     background: var(--secondary_color);
@@ -185,7 +184,7 @@ p {
     border: 1px solid var(--secondary_color) !important;
     transition: 0.4s all;
 }
-/* Icon */
+
 .d2c_icon {
     width: 32px;
     height: 32px;
@@ -199,7 +198,7 @@ p {
     margin-right: 20px;
 }
 
-/* Theme Switcher Button */
+
 #theme-toggle {
     background: transparent;
     border: 1px solid var(--accent_color);
@@ -218,7 +217,7 @@ p {
     color: var(--primary_bg);
 }
 
-/* Contact Link Style */
+
 .contact-link {
    color: var(--secondary_color);
    font-weight: 500;
@@ -229,9 +228,9 @@ p {
    color: var(--primary_color);
    text-decoration: underline;
 }
-/* Global Style End */
 
-/* Preloader End */
+
+
 .preloader {
     display: flex;
     justify-content: center;
@@ -254,9 +253,9 @@ p {
     max-width: 200px;
     max-height: 50px;
 }
-/* Preloader End */
 
-/* Navbar Start */
+
+
 .navbar-brand {
     max-width: 106px;
 }
@@ -304,7 +303,7 @@ p {
     border: 1px solid var(--primary_color);
     transition: 0.4s all;
 }
-/* Nav Item Show from Side */
+
 body .d2c_mobile_view {
     position: fixed;
     height: 100vh;
@@ -375,9 +374,7 @@ body .d2c_mobile_view {
         transition: .5s;
     }
 }
-/* Navbar End */
 
-/* Section Background Start */
 .d2c_hero_wrapper {
     background: linear-gradient(180deg, rgba(13, 17, 26, 0.7) 0%, rgba(13, 17, 26, 0.8) 85%, var(--primary_bg) 95%), url(../images/hero_bg.jpg);
     background-repeat: no-repeat;
@@ -413,9 +410,7 @@ body .d2c_mobile_view {
     background-repeat: no-repeat;
     background-size: cover;
 }
-/* Section Background End */
 
-/* Hero Section Start */
 h1 {
     color: var(--primary_color);
     font-size: 64px;
@@ -443,9 +438,7 @@ h1 span {
 .d2c_hero_wrapper p {
     margin-bottom: 35px;
 }
-/* Hero Section End */
 
-/* About Section Start */
 .d2c_about_wrapper img {
     border-radius: 0px 296.5px 0px 0px;
 }
@@ -469,9 +462,7 @@ h1 span {
 .d2c_about_wrapper i {
     font-size: 14px;
 }
-/* About Section End */
 
-/* Service Section Start */
 .d2c_card {
     padding: 1px 1px 0px 1px;
     background: linear-gradient(180deg, rgba(74, 123, 255, 0.5) 0%, rgba(15, 23, 42, 0) 90%);
@@ -521,9 +512,7 @@ h1 span {
 .d2c_card h6 {
     margin-bottom: 10px;
 }
-/* Service Section End */
 
-/* Counter Section Start */
 .d2c_border_bg {
     background: linear-gradient(180deg, rgba(87,98,193,0.5) 0%, rgba(50,57,106,0.5) 100%);
     padding: 1px;
@@ -542,9 +531,7 @@ h1 span {
 .d2c_counter_wrapper h6 {
     color: var(--secondary_color);
 }
-/* Counter Section End */
 
-/* Why Choose Me Section Start */
 .d2c_choose_me_wrapper h4 {
     color: var(--secondary_color);
     font-size: 27px;
@@ -572,9 +559,7 @@ h1 span {
 .d2c_choose_me_wrapper li {
     margin: 7px 0px;
 }
-/* Why Choose Me Section End */
 
-/* Call To Action Start */
 .d2c_c2a_card {
     padding: 70px 80px;
     background-image: url(../images/d2c_box_bg.png);
@@ -589,9 +574,7 @@ h1 span {
 .d2c_c2a_card p {
     margin-bottom: 40px;
 }
-/* Call To Action End */
 
-/* Project Section Start */
 .d2c_project_wrapper h2 {
     margin-bottom: 20px;
 }
@@ -668,9 +651,7 @@ h1 span {
     font-size: 10px;
     margin-right: 10px;
 }
-/* Project Section End */
 
-/* Partner Section Start */
 .d2c_partner_box {
     background-image: url(../images/d2c_box_bg.png);
     background-position: center;
@@ -684,9 +665,7 @@ h1 span {
 .slick-slide {
     padding: 0px 12px;
 }
-/* Partner Section End */
 
-/* Testimonial Section Start */
 .d2c_testimonial_wrapper h2 {
     margin-bottom: 60px;
 }
@@ -732,9 +711,7 @@ h1 span {
     justify-content: center;
     align-items: center;
 }
-/* Testimonial Section End */
 
-/* Contact Section Start */
 .form-label {
     color: var(--secondary_color);
     font-size: 18px;
@@ -766,9 +743,7 @@ h1 span {
 textarea {
     margin-bottom: 30px !important;
 }
-/* Contact Section End */
 
-/* Footer Section Start */
 .d2c_footer_wrapper {
     background: url(../images/group.png), url(../images/footer_bg.jpg), var(--primary_bg);
     background-repeat: no-repeat;
@@ -972,9 +947,6 @@ textarea {
 .d2c_footer_wrapper .input-group {
     background: radial-gradient(100% 100% at 50% 0%, rgba(120, 119, 198, 0.17) 0%, rgba(13, 17, 26, 0.00) 100%), var(--color_one);
 }
-/* Footer Section End */
-
-/* Copy Right Section Start */
 .d2c_copy_right_wrapper {
     padding: 12px 0px;
     background: var(--secondary_color);
@@ -1110,9 +1082,6 @@ textarea {
     transform: scale(1.2);
     text-shadow: 0 0 5px rgba(0, 255, 0, 0.5);
 }
-/* Copy Right Section End */
-
-/* Scroll Button Start */
 #scrollBtn {
     display: none;
     position: fixed;
@@ -1173,7 +1142,7 @@ textarea {
     100% { transform: rotate(360deg);}
 }
 
-/* Matrix Rain Effect */
+
 .matrix-rain {
     position: absolute;
     top: 0;
@@ -1212,7 +1181,7 @@ textarea {
     }
 }
 
-/* Minimalist Contact Section Inspired by Reference Image */
+
 .d2c_contact_wrapper {
     background: var(--primary_bg);
     padding: 80px 0;
