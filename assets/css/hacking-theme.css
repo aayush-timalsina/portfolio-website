@@ -1,11 +1,6 @@
-/* ===========================================
-   PROFESSIONAL HACKING THEME CSS
-   Dark Matrix Terminal Style
-   =========================================== */
 
-/* Root Variables - Hacking Theme */
 :root {
-    /* Hacking Color Palette */
+    
     --matrix-green: #00ff41;
     --terminal-green: #00ff00;
     --cyber-blue: #00d4ff;
@@ -15,16 +10,16 @@
     --terminal-bg: #001100;
     --code-bg: #0d1117;
     
-    /* Typography */
+    
     --hacker-font: 'Courier New', 'Consolas', monospace;
     --terminal-font: 'Fira Code', 'Source Code Pro', monospace;
     
-    /* Effects */
+    
     --glow: 0 0 10px var(--matrix-green), 0 0 20px var(--matrix-green);
     --neon-glow: 0 0 5px var(--cyber-blue), 0 0 10px var(--cyber-blue);
 }
 
-/* Global Styles */
+
 body {
     background: var(--dark-bg);
     background-image: 
@@ -35,7 +30,7 @@ body {
     overflow-x: hidden;
 }
 
-/* Matrix Background Effect */
+
 .matrix-bg {
     position: fixed;
     top: 0;
@@ -54,7 +49,7 @@ body {
         );
 }
 
-/* Terminal Style Elements */
+
 .terminal-window {
     background: var(--terminal-bg);
     border: 1px solid var(--matrix-green);
@@ -81,7 +76,7 @@ body {
     100% { opacity: 0.5; }
 }
 
-/* Typewriter Effect */
+
 .typewriter {
     overflow: hidden;
     border-right: 0.15em solid var(--matrix-green);
@@ -101,7 +96,7 @@ body {
     50% { border-color: var(--matrix-green); }
 }
 
-/* Hacker Buttons */
+
 .hacker-btn {
     background: transparent;
     color: var(--matrix-green);
@@ -136,7 +131,7 @@ body {
     transform: translateY(-2px);
 }
 
-/* Skill Cards - Hacker Style */
+
 .skill-card {
     background: var(--code-bg);
     border: 1px solid rgba(0, 255, 65, 0.2);
@@ -160,7 +155,7 @@ body {
     100% { transform: translateX(100%); }
 }
 
-/* Project Cards - Terminal Style */
+
 .project-card {
     background: var(--terminal-bg);
     border: 1px solid var(--matrix-green);
@@ -184,7 +179,6 @@ body {
     opacity: 0.3;
 }
 
-/* Navigation - Hacker Style */
 .hacker-nav {
     background: rgba(10, 10, 10, 0.9);
     border-bottom: 1px solid var(--matrix-green);
@@ -214,7 +208,7 @@ body {
     width: 100%;
 }
 
-/* Hero Section - Hacker Style */
+
 .hero-section {
     background: linear-gradient(135deg, var(--dark-bg) 0%, var(--darker-bg) 100%);
     position: relative;
@@ -251,7 +245,7 @@ body {
     to { filter: brightness(1.2); }
 }
 
-/* Responsive Hacking Theme */
+
 @media (max-width: 768px) {
     .hero-content h1 {
         font-size: 2.5rem;
@@ -267,7 +261,7 @@ body {
     }
 }
 
-/* Loading Animation */
+
 .loading {
     position: fixed;
     top: 0;
