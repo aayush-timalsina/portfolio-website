@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aayush Timalsina - Cybersecurity Student</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="nav" class="nav">
+        <div class="nav-container">
+            <div class="nav-logo">Aayush Timalsina</div>
+            
+            <!-- Desktop Navigation -->
+            <div class="nav-links">
+                <a href="#about" class="nav-link">
+                    <svg class="nav-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                    <span>About</span>
+                </a>
+                <a href="#skills" class="nav-link">
+                    <svg class="nav-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="16 18 22 12 16 6"></polyline>
+                        <polyline points="8 6 2 12 8 18"></polyline>
+                    </svg>
+                    <span>Skills</span>
+                </a>
+                <a href="#projects" class="nav-link">
+                    <svg class="nav-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 2 0 1 1 0 4"></path>
+                    </svg>
+                    <span>Projects</span>
+                </a>
+                <a href="#contact" class="nav-link">
+                    <svg class="nav-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                        <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                    </svg>
+                    <span>Contact</span>
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="#about" class="mobile-link">About</a>
+            <a href="#skills" class="mobile-link">Skills</a>
+            <a href="#projects" class="mobile-link">Projects</a>
+            <a href="#contact" class="mobile-link">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="hero-content">
+            <!-- Status Badge -->
+            <div class="status-badge">
+                <span class="status-dot"></span>
+                <span>Available for opportunities</span>
+            </div>
+
+            <!-- Main Title -->
+            <h1 class="hero-title">
+                <span>Aayush</span> <span>Timalsina</span>
+            </h1>
+
+            <!-- Subtitle -->
+            <p class="hero-subtitle">Cybersecurity Student</p>
+            
+            <p class="hero-description">
+                Passionate about penetration testing, threat detection, and ethical hacking. 
+                Building skills to protect digital assets and create secure systems.
+            </p>
+
+            <!-- CTA Buttons -->
+            <div class="hero-buttons">
+                <button class="mac-btn-primary" onclick="scrollToSection('contact')">
+                    <span>Get in Touch</span>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14m-7-7 7 7-7 7"></path>
+                    </svg>
+                </button>
+                <button class="mac-btn-secondary" onclick="scrollToSection('about')">
+                    <span>Learn More</span>
+                </button>
+            </div>
+
+            <!-- Quick Stats -->
+            <div class="hero-stats">
+                <div class="stat-card">
+                    <p class="stat-value">17</p>
+                    <p class="stat-label">Years Old</p>
+                </div>
+                <div class="stat-card">
+                    <p class="stat-value">4+</p>
+                    <p class="stat-label">Projects</p>
+                </div>
+                <div class="stat-card">
+                    <p class="stat-value">Class 12</p>
+                    <p class="stat-label">Student</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator" onclick="scrollToSection('about')">
+            <span>Scroll</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="m6 9 6 6 6-6"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <!-- Section Header -->
+            <div class="section-header">
+                <p class="section-label">ABOUT</p>
+                <h2 class="section-title">Who I Am</h2>
+            </div>
+
+            <!-- Main Content -->
+            <div class="about-grid">
+                <!-- Left Column -->
+                <div class="about-left">
+                    <!-- Bio Card -->
+                    <div class="mac-card card-padding">
+                        <h3 class="card-title">About Me</h3>
+                        
+                        <p class="text-secondary mb-4">
+                            Hi! I'm <span class="text-primary">Aayush Timalsina</span>, 
+                            currently studying in class 12 at Skyrider College, Nepal (Chitwan, Tandi, Ratnanagar-13).
+                        </p>
+                        <p class="text-secondary mb-4">
+                            I am passionate about <span class="text-blue">cybersecurity</span>, especially 
+                            penetration testing, threat detection and monitoring, and scripting and automation.
+                        </p>
+                        <p class="text-secondary">
+                            I enjoy learning new ways to protect digital assets and help organizations stay secure 
+                            in an ever-evolving cyber landscape.
+                        </p>
+                    </div>
+
+                    <!-- Info Grid -->
+                    <div class="info-grid">
+                        <div class="info-card">
+                            <div class="icon-box">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="info-label">Name</p>
+                                <p class="info-value">Aayush Timalsina</p>
+                            </div>
+                        </div>
+
+                        <div class="info-card">
+                            <div class="icon-box">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                                    <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="info-label">Education</p>
+                                <p class="info-value">Class 12 - Skyrider College</p>
+                            </div>
+                        </div>
+
+                        <div class="info-card">
+                            <div class="icon-box">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="info-label">Location</p>
+                                <p class="info-value">Chitwan, Nepal</p>
+                            </div>
+                        </div>
+
+                        <div class="info-card">
+                            <div class="icon-box">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <circle cx="12" cy="12" r="6"></circle>
+                                    <circle cx="12" cy="12" r="2"></circle>
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="info-label">Focus</p>
+                                <p class="info-value">Cybersecurity</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column - Profile Card -->
+                <div class="about-right">
+                    <div class="mac-card profile-card">
+                        <!-- Profile -->
+                        <div class="profile-header">
+                            <div class="profile-avatar">
+                                <div class="avatar-inner">
+                                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <h3 class="profile-name">Aayush Timalsina</h3>
+                            <p class="profile-role">Cybersecurity Student</p>
+                        </div>
+
+                        <!-- Skills Tags -->
+                        <div class="profile-skills">
+                            <span class="mac-tag">Penetration Testing</span>
+                            <span class="mac-tag">NMAP</span>
+                            <span class="mac-tag">Wireshark</span>
+                            <span class="mac-tag">Threat Detection</span>
+                        </div>
+
+                        <!-- Contact Buttons -->
+                        <div class="profile-buttons">
+                            <a href="tel:9864213641" class="mac-btn-secondary btn-full">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                                </svg>
+                                <span>9864213641</span>
+                            </a>
+                            <a href="mailto:aayushtimalsina789@gmail.com" class="mac-btn-secondary btn-full">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                                </svg>
+                                <span>Send Email</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <!-- Section Header -->
+            <div class="section-header">
+                <p class="section-label">SKILLS</p>
+                <h2 class="section-title">What I Do</h2>
+                <p class="section-description">
+                    Here are the key skills I've developed through my cybersecurity studies and hands-on practice.
+                </p>
+            </div>
+
+            <!-- Skills Grid -->
+            <div class="skills-grid">
+                <!-- Skill 1: Penetration Testing -->
+                <div class="skill-card mac-card card-padding">
+                    <div class="skill-header">
+                        <div class="skill-icon-box">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                            </svg>
+                        </div>
+                        <span class="skill-percentage">85%</span>
+                    </div>
+                    <h3 class="skill-name">Penetration Testing</h3>
+                    <p class="skill-description">Identifying and exploiting vulnerabilities</p>
+                    <div class="mac-progress">
+                        <div class="mac-progress-fill" data-width="85"></div>
+                    </div>
+                    <div class="skill-tools">
+                        <span class="mac-tag">Metasploit</span>
+                        <span class="mac-tag">Burp Suite</span>
+                        <span class="mac-tag">OWASP ZAP</span>
+                    </div>
+                </div>
+
+                <!-- Skill 2: Threat Detection -->
+                <div class="skill-card mac-card card-padding">
+                    <div class="skill-header">
+                        <div class="skill-icon-box">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"></path>
+                                <circle cx="12" cy="12" r="3"></circle>
+                            </svg>
+                        </div>
+                        <span class="skill-percentage">80%</span>
+                    </div>
+                    <h3 class="skill-name">Threat Detection</h3>
+                    <p class="skill-description">Monitoring systems for security threats</p>
+                    <div class="mac-progress">
+                        <div class="mac-progress-fill" data-width="80"></div>
+                    </div>
+                    <div class="skill-tools">
+                        <span class="mac-tag">SIEM</span>
+                        <span class="mac-tag">IDS/IPS</span>
+                        <span class="mac-tag">Splunk</span>
+                    </div>
+                </div>
+
+                <!-- Skill 3: NMAP -->
+                <div class="skill-card mac-card card-padding">
+                    <div class="skill-header">
+                        <div class="skill-icon-box">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="16" y="16" width="6" height="6" rx="1"></rect>
+                                <rect x="2" y="16" width="6" height="6" rx="1"></rect>
+                                <rect x="9" y="2" width="6" height="6" rx="1"></rect>
+                                <path d="M5 16v-3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3m-7-11v5"></path>
+                            </svg>
+                        </div>
+                        <span class="skill-percentage">90%</span>
+                    </div>
+                    <h3 class="skill-name">NMAP</h3>
+                    <p class="skill-description">Network mapping and reconnaissance</p>
+                    <div class="mac-progress">
+                        <div class="mac-progress-fill" data-width="90"></div>
+                    </div>
+                    <div class="skill-tools">
+                        <span class="mac-tag">Port Scanning</span>
+                        <span class="mac-tag">OS Detection</span>
+                        <span class="mac-tag">Scripting</span>
+                    </div>
+                </div>
+
+                <!-- Skill 4: Wireshark -->
+                <div class="skill-card mac-card card-padding">
+                    <div class="skill-header">
+                        <div class="skill-icon-box">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <path d="m21 21-4.35-4.35M11 8a3 3 0 0 1 0 6"></path>
+                            </svg>
+                        </div>
+                        <span class="skill-percentage">75%</span>
+                    </div>
+                    <h3 class="skill-name">Wireshark</h3>
+                    <p class="skill-description">Network traffic analysis</p>
+                    <div class="mac-progress">
+                        <div class="mac-progress-fill" data-width="75"></div>
+                    </div>
+                    <div class="skill-tools">
+                        <span class="mac-tag">Packet Analysis</span>
+                        <span class="mac-tag">Protocol Debugging</span>
+                    </div>
+                </div>
+
+                <!-- Skill 5: Web App Security -->
+                <div class="skill-card mac-card card-padding">
+                    <div class="skill-header">
+                        <div class="skill-icon-box">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="m8 2 1.88 1.88M14.12 3.88 16 2M9 7.13v-1a3.003 3.003 0 1 1 6 0v1"></path>
+                                <path d="M12 20c-3.3 0-6-2.7-6-6v-3a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v3c0 3.3-2.7 6-6 6Z"></path>
+                                <path d="M12 20v-9m-4 4 4 4 4-4"></path>
+                            </svg>
+                        </div>
+                        <span class="skill-percentage">70%</span>
+                    </div>
+                    <h3 class="skill-name">Web App Security</h3>
+                    <p class="skill-description">Web application vulnerability assessment</p>
+                    <div class="mac-progress">
+                        <div class="mac-progress-fill" data-width="70"></div>
+                    </div>
+                    <div class="skill-tools">
+                        <span class="mac-tag">SQL Injection</span>
+                        <span class="mac-tag">XSS</span>
+                        <span class="mac-tag">OWASP Top 10</span>
+                    </div>
+                </div>
+
+                <!-- Skill 6: Scripting -->
+                <div class="skill-card mac-card card-padding">
+                    <div class="skill-header">
+                        <div class="skill-icon-box">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="16 18 22 12 16 6"></polyline>
+                                <polyline points="8 6 2 12 8 18"></polyline>
+                            </svg>
+                        </div>
+                        <span class="skill-percentage">65%</span>
+                    </div>
+                    <h3 class="skill-name">Scripting</h3>
+                    <p class="skill-description">Automation and tool development</p>
+                    <div class="mac-progress">
+                        <div class="mac-progress-fill" data-width="65"></div>
+                    </div>
+                    <div class="skill-tools">
+                        <span class="mac-tag">Python</span>
+                        <span class="mac-tag">Bash</span>
+                        <span class="mac-tag">PowerShell</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Additional Skills -->
+            <div class="mac-card card-padding mt-10">
+                <h3 class="card-title">Additional Capabilities</h3>
+                <div class="additional-skills">
+                    <div class="additional-skill">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="4 17 10 11 4 5"></polyline>
+                            <line x1="12" y1="19" x2="20" y2="19"></line>
+                        </svg>
+                        <span>Linux</span>
+                    </div>
+                    <div class="additional-skill">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                        </svg>
+                        <span>Kali Linux</span>
+                    </div>
+                    <div class="additional-skill">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                            <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                        </svg>
+                        <span>Encryption</span>
+                    </div>
+                    <div class="additional-skill">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                        </svg>
+                        <span>Vulnerability Assessment</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stats -->
+            <div class="skills-stats">
+                <div class="stat-box">
+                    <p class="stat-big">6</p>
+                    <p class="stat-small">Core Skills</p>
+                </div>
+                <div class="stat-box">
+                    <p class="stat-big">78%</p>
+                    <p class="stat-small">Avg. Proficiency</p>
+                </div>
+                <div class="stat-box">
+                    <p class="stat-big stat-green">100%</p>
+                    <p class="stat-small">Dedication</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <!-- Section Header -->
+            <div class="section-header">
+                <p class="section-label">PROJECTS</p>
+                <h2 class="section-title">My Work</h2>
+                <p class="section-description">
+                    Here are some projects I've worked on during my cybersecurity studies.
+                </p>
+            </div>
+
+            <!-- Projects Grid -->
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card mac-card">
+                    <div class="project-image">
+                        <img src="images/project-network-security.jpg" alt="Network Security Lab">
+                        <div class="project-overlay"></div>
+                        <div class="project-icon-badge">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Network Security Lab</h3>
+                        <p class="project-description">
+                            Configured firewalls and intrusion detection systems in a simulated environment 
+                            to learn about network protection and threat detection.
+                        </p>
+                        <div class="project-skills">
+                            <span class="mac-tag">Firewall Configuration</span>
+                            <span class="mac-tag">IDS/IPS Setup</span>
+                            <span class="mac-tag">Vulnerability Scanning</span>
+                        </div>
+                        <div class="project-actions">
+                            <button class="mac-btn-primary btn-flex-1">
+                                <span>View Details</span>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="m9 18 6-6-6-6"></path>
+                                </svg>
+                            </button>
+                            <button class="icon-btn">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                </svg>
+                            </button>
+                            <button class="icon-btn">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6m4-3h6v6m-11 5L21 3"></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card mac-card">
+                    <div class="project-image">
+                        <img src="images/project-web-pentest.jpg" alt="Web Application Penetration Testing">
+                        <div class="project-overlay"></div>
+                        <div class="project-icon-badge">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Web Application Penetration Testing</h3>
+                        <p class="project-description">
+                            Conducted security assessments on web applications to identify vulnerabilities 
+                            such as SQL injection, XSS, and CSRF.
+                        </p>
+                        <div class="project-skills">
+                            <span class="mac-tag">OWASP Testing</span>
+                            <span class="mac-tag">Burp Suite</span>
+                            <span class="mac-tag">Vulnerability Reporting</span>
+                        </div>
+                        <div class="project-actions">
+                            <button class="mac-btn-primary btn-flex-1">
+                                <span>View Details</span>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="m9 18 6-6-6-6"></path>
+                                </svg>
+                            </button>
+                            <button class="icon-btn">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                </svg>
+                            </button>
+                            <button class="icon-btn">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6m4-3h6v6m-11 5L21 3"></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card mac-card">
+                    <div class="project-image">
+                        <img src="images/project-traffic-analysis.jpg" alt="Network Traffic Analysis">
+                        <div class="project-overlay"></div>
+                        <div class="project-icon-badge">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"></path>
+                                <circle cx="12" cy="12" r="3"></circle>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Network Traffic Analysis</h3>
+                        <p class="project-description">
+                            Analyzed network traffic to detect suspicious activities and potential security 
+                            threats using Wireshark.
+                        </p>
+                        <div class="project-skills">
+                            <span class="mac-tag">Wireshark Analysis</span>
+                            <span class="mac-tag">Intrusion Detection</span>
+                            <span class="mac-tag">Threat Hunting</span>
+                        </div>
+                        <div class="project-actions">
+                            <button class="mac-btn-primary btn-flex-1">
+                                <span>View Details</span>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="m9 18 6-6-6-6"></path>
+                                </svg>
+                            </button>
+                            <button class="icon-btn">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                </svg>
+                            </button>
+                            <button class="icon-btn">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6m4-3h6v6m-11 5L21 3"></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card mac-card">
+                    <div class="project-image">
+                        <img src="images/project-price-tampering.jpg" alt="Price Tampering Vulnerability">
+                        <div class="project-overlay"></div>
+                        <div class="project-icon-badge">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <path d="m21 21-4.35-4.35"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Price Tampering Vulnerability</h3>
+                        <p class="project-description">
+                            Identified and exploited price tampering vulnerabilities in e-commerce platforms 
+                            through penetration testing.
+                        </p>
+                        <div class="project-skills">
+                            <span class="mac-tag">Vulnerability Assessment</span>
+                            <span class="mac-tag">Penetration Testing</span>
+                            <span class="mac-tag">Security Implementation</span>
+                        </div>
+                        <div class="project-actions">
+                            <button class="mac-btn-primary btn-flex-1">
+                                <span>View Details</span>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="m9 18 6-6-6-6"></path>
+                                </svg>
+                            </button>
+                            <button class="icon-btn">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                </svg>
+                            </button>
+                            <button class="icon-btn">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6m4-3h6v6m-11 5L21 3"></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Stats -->
+            <div class="mac-card card-padding project-stats">
+                <div class="project-stats-left">
+                    <div class="project-stat-item">
+                        <p class="project-stat-value">4</p>
+                        <p class="project-stat-label">Total Projects</p>
+                    </div>
+                    <div class="project-stat-divider"></div>
+                    <div class="project-stat-item">
+                        <p class="project-stat-value">4</p>
+                        <p class="project-stat-label">Security Domains</p>
+                    </div>
+                </div>
+                <p class="project-updated">Last updated: February 2025</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <!-- Section Header -->
+            <div class="section-header">
+                <p class="section-label">CONTACT</p>
+                <h2 class="section-title">Get in Touch</h2>
+                <p class="section-description">
+                    Interested in working together or just want to say hello? Feel free to reach out.
+                </p>
+            </div>
+
+            <!-- Main Content -->
+            <div class="contact-grid">
+                <!-- Left Column -->
+                <div class="contact-left">
+                    <!-- Contact Information -->
+                    <div class="mac-card card-padding">
+                        <h3 class="card-title">Contact Information</h3>
+                        <div class="contact-info-list">
+                            <a href="tel:9864213641" class="contact-info-item">
+                                <div class="contact-icon-box">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p class="contact-label">Phone</p>
+                                    <p class="contact-value">9864213641</p>
+                                </div>
+                            </a>
+
+                            <a href="mailto:aayushtimalsina789@gmail.com" class="contact-info-item">
+                                <div class="contact-icon-box">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                                        <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p class="contact-label">Email</p>
+                                    <p class="contact-value">aayushtimalsina789@gmail.com</p>
+                                </div>
+                            </a>
+
+                            <div class="contact-info-item">
+                                <div class="contact-icon-box">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                        <circle cx="12" cy="10" r="3"></circle>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p class="contact-label">Location</p>
+                                    <p class="contact-value">Chitwan, Nepal</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Social Links -->
+                    <div class="mac-card card-padding">
+                        <h3 class="card-title">Social Links</h3>
+                        <div class="social-links">
+                            <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                </svg>
+                            </a>
+                            <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" class="social-link" title="LinkedIn">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                    <rect x="2" y="9" width="4" height="12"></rect>
+                                    <circle cx="4" cy="4" r="2"></circle>
+                                </svg>
+                            </a>
+                            <a href="https://www.instagram.com/t_y_p_e_c" target="_blank" rel="noopener noreferrer" class="social-link" title="Instagram">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column - Contact Form -->
+                <div class="contact-right">
+                    <div class="mac-card card-padding">
+                        <div id="formContainer">
+                            <form id="contactForm" class="contact-form">
+                                <div class="form-row">
+                                    <div class="form-field">
+                                        <label class="form-label">Name</label>
+                                        <input type="text" name="name" placeholder="Your name" required class="mac-input">
+                                    </div>
+                                    <div class="form-field">
+                                        <label class="form-label">Email</label>
+                                        <input type="email" name="email" placeholder="your@email.com" required class="mac-input">
+                                    </div>
+                                </div>
+                                <div class="form-field">
+                                    <label class="form-label">Message</label>
+                                    <textarea name="message" placeholder="Your message..." required rows="5" class="mac-input"></textarea>
+                                </div>
+                                <button type="submit" class="mac-btn-primary btn-full" id="submitBtn">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="m22 2-7 20-4-9-9-4Z"></path>
+                                        <path d="M22 2 11 13"></path>
+                                    </svg>
+                                    <span>Send Message</span>
+                                </button>
+                            </form>
+                            
+                            <div id="successMessage" class="success-message" style="display: none;">
+                                <div class="success-icon">
+                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                        <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                                    </svg>
+                                </div>
+                                <h3 class="success-title">Message Sent!</h3>
+                                <p class="success-text">Thank you for reaching out. I'll get back to you soon.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">Aayush Timalsina</div>
+            <div class="footer-center">
+                <span>Built by - ></span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="#ff453a" stroke="#ff453a" stroke-width="2">
+                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                </svg>
+                <span>TYPE-C</span>
+            </div>
+            <div class="footer-copyright">
+                &copy; <span id="currentYear"></span> All rights reserved
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
